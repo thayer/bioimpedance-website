@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- 
+PLEASE NOTE:
+This page was created for use with Adobe Contribute. However, the page layout is not locked. 
+
+Editing anywhere outside of the area notated as EDITABLE allows for the risk of breaking the page layout.
+
+It is not reccomended to do so. Should editing be required, please backup this file before doing so.
+
+www.mediumbold.com
+--> 
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<link rel="stylesheet" type="text/css" href="/templates/css/global_style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/local_style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/templates/css/print_style.css" media="print" />
+<title>Technology Research Project: High Performance Computing - Clinical Applications of Bioimpedance Laboratory</title>
+</head>
+
+<body>
+<div id="header">
+	<div id="header-print"><img id="thayer-logo-print" src="/templates/images/thayerlogo_print.jpg" width="150" height="34" alt="Thayer School of Engineering At Dartmouth logo"  /></div>
+	<div id="utilitynav">
+		<div id="stripe">
+			<a href="http://www.dartmouth.edu/">Dartmouth Home</a> &nbsp;|&nbsp; <a href="http://engineering.dartmouth.edu/">Thayer Home</a>		
+		</div>
+	</div>
+</div>
+
+<div id="mastercontainer">
+	<div id="navigation">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="biophysics.html">Biophysics Research Projects</a></li>
+			<li><a href="technology.html" class="current_page">Technology Research Projects</a></li>
+			<li class="subnav">
+				<a href="breast-imaging.html">Breast Imaging System</a>				
+				<a href="brain-imaging.html">Traumatic Brain Injury Imaging System</a>				
+				<a href="tetrapolar-EIT.html">Dual Parallel Drive and Tetrapolar-based EIT System</a>				
+				<a href="high-speed-EIT.html">High-speed EIT System</a>				
+				<a href="small-form-factor-EIT.html">Small Form-factor EIT</a>	
+				<a href="high-performance-computing.html">High Performance Computing</a>				
+				<a href="image-reconstruction.html">Novel Approaches To Image Reconstruction</a>				
+				<a href="modeling-prostate.html">Anatomical Modeling of the Prostate and Use of Ultrasound Information in EIT Reconstruction</a>				
+				<a href="optical-capture.html">Optical Capture of the Anatomy</a>				
+			</li>
+			<li><a href="clinical.html">Clinical Research Projects</a></li>
+			<li><a href="people.html">People</a></li>
+			<li><a href="publications.html">Publications</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<div id="search">
+			<div style="clear:both;"></div>
+		</div>
+		<div id="related">
+			
+		</div>
+	</div>
+	
+	<div id="content_positioning">         
+<!-- EDITABLE: This is the content of the page, standard editing will not break the layout --> 
+
+    	<div id="content"> 
+          <h1>High Performance Computing</h1>
+
+<p>Electrical impedance tomography image reconstruction is based on the NDRM software package, in development since 2006. NDRM incorporates novel approaches in image reconstruction and is highly optimized in terms of performance for 3D applications. NDRM is a mixed package based on MATLAB, where the computationally costly components have been implemented in C/C++ using mex files and multithreaded libraries. Switching from a plain MATLAB implementation to a mixed MATLAB / C/C++ approach resulted in performance gains of 10 to 20 times.</p>
+
+<p>We have recently been enhancing the performance of NDRM through use of Graphic Processing Units (GPUs) for speeding up parts of the routines involved in image reconstruction. The Jacobian computation, currently the routine that consumes about 70% of the total computing time, has been optimized for execution on single and multiple GPUs, obtaining speed-up gains of up to 50 times on four GPUs. Algebraic Multigrid Methods, a class of fast iterative solvers, are being implemented in GPUs, for the solution of the direct problem.</p>
+
+<p>The ability to reconstruct medical images at higher speeds allows us to better explore experimental clinical data that is currently being acquired through trials at Dartmouth-Hitchcock Medical Center (DHMC). It also allows us to use much denser FEM models, resulting in better accuracy.</p>
+
+<p class="photo-no-caption"><img src="images/finite-element-mesh.jpg" width="350" height="292" alt="Finite element mesh" /></p>
+
+<p>The finite element mesh shown above comprises approximately 200,000 nodes and 1,000,000 elements. Reconstruction times with optimized algorithms require several hours. Accelerated GPU reconstruction can be performed in few minutes, allowing a much faster turnaround in the investigation of different clinical cases, and exploration of the effect of different image reconstruction parameters.</p>
+		  
+		</div>	                 
+	<!-- END EDITABLE: --> 
+		</div>
+	<div style="clear:both"></div>
+	<br />
+</div>
+
+
+<div id="footer">
+	<div style="float:left;">
+		&copy; 2014 Trustees of Dartmouth College
+     	<br />
+		<a href="http://engineering.dartmouth.edu/about/location/directions/">Maps &amp; Directions</a>	</div>
+	<div style="float:right;text-align:right;">
+		<b>Thayer School of Engineering at Dartmouth</b><br />
+		14 Engineering Drive, Hanover, NH 03755<br />
+		Phone: 603-646-2230, Fax: 603-646-3856	</div>
+</div>
+</body>
+</html>
